@@ -1,0 +1,687 @@
+/** 
+* ProjectName V1.0.0 
+* By mao
+* http://damaohub.github.io/evo/
+ */
+/* === Typography === */
+.display-flex {
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+.display-block {
+  display: block !important;
+}
+.display-inline-flex {
+  display: -ms-inline-flexbox !important;
+  display: inline-flex !important;
+}
+.display-inline-block {
+  display: inline-block !important;
+}
+.display-inline {
+  display: inline !important;
+}
+.display-none {
+  display: none !important;
+}
+.flex-shrink-0 {
+  -ms-flex-negative: 0 !important;
+      flex-shrink: 0 !important;
+}
+.flex-shrink-1 {
+  -ms-flex-negative: 1 !important;
+      flex-shrink: 1 !important;
+}
+.flex-shrink-2 {
+  -ms-flex-negative: 2 !important;
+      flex-shrink: 2 !important;
+}
+.flex-shrink-3 {
+  -ms-flex-negative: 3 !important;
+      flex-shrink: 3 !important;
+}
+.flex-shrink-4 {
+  -ms-flex-negative: 4 !important;
+      flex-shrink: 4 !important;
+}
+.flex-shrink-5 {
+  -ms-flex-negative: 5 !important;
+      flex-shrink: 5 !important;
+}
+.flex-shrink-6 {
+  -ms-flex-negative: 6 !important;
+      flex-shrink: 6 !important;
+}
+.flex-shrink-7 {
+  -ms-flex-negative: 7 !important;
+      flex-shrink: 7 !important;
+}
+.flex-shrink-8 {
+  -ms-flex-negative: 8 !important;
+      flex-shrink: 8 !important;
+}
+.flex-shrink-9 {
+  -ms-flex-negative: 9 !important;
+      flex-shrink: 9 !important;
+}
+.flex-shrink-10 {
+  -ms-flex-negative: 10 !important;
+      flex-shrink: 10 !important;
+}
+.justify-content-flex-start {
+  -ms-flex-pack: start !important;
+      justify-content: flex-start !important;
+}
+.justify-content-center {
+  -ms-flex-pack: center !important;
+      justify-content: center !important;
+}
+.justify-content-flex-end {
+  -ms-flex-pack: end !important;
+      justify-content: flex-end !important;
+}
+.justify-content-space-between {
+  -ms-flex-pack: justify !important;
+      justify-content: space-between !important;
+}
+.justify-content-space-around {
+  -ms-flex-pack: distribute !important;
+      justify-content: space-around !important;
+}
+.justify-content-space-evenly {
+  -ms-flex-pack: space-evenly !important;
+      justify-content: space-evenly !important;
+}
+.justify-content-stretch {
+  -ms-flex-pack: stretch !important;
+      justify-content: stretch !important;
+}
+.justify-content-start {
+  -ms-flex-pack: start !important;
+      justify-content: start !important;
+}
+.justify-content-end {
+  -ms-flex-pack: end !important;
+      justify-content: end !important;
+}
+.justify-content-left {
+  -ms-flex-pack: left !important;
+      justify-content: left !important;
+}
+.justify-content-right {
+  -ms-flex-pack: right !important;
+      justify-content: right !important;
+}
+.align-content-flex-start {
+  -ms-flex-line-pack: start !important;
+      align-content: flex-start !important;
+}
+.align-content-flex-end {
+  -ms-flex-line-pack: end !important;
+      align-content: flex-end !important;
+}
+.align-content-center {
+  -ms-flex-line-pack: center !important;
+      align-content: center !important;
+}
+.align-content-space-between {
+  -ms-flex-line-pack: justify !important;
+      align-content: space-between !important;
+}
+.align-content-space-around {
+  -ms-flex-line-pack: distribute !important;
+      align-content: space-around !important;
+}
+.align-content-stretch {
+  -ms-flex-line-pack: stretch !important;
+      align-content: stretch !important;
+}
+.align-items-flex-start {
+  -ms-flex-align: start !important;
+      align-items: flex-start !important;
+}
+.align-items-flex-end {
+  -ms-flex-align: end !important;
+      align-items: flex-end !important;
+}
+.align-items-center {
+  -ms-flex-align: center !important;
+      align-items: center !important;
+}
+.align-items-stretch {
+  -ms-flex-align: stretch !important;
+      align-items: stretch !important;
+}
+.align-self-flex-start {
+  -ms-flex-item-align: start !important;
+      align-self: flex-start !important;
+}
+.align-self-flex-end {
+  -ms-flex-item-align: end !important;
+      align-self: flex-end !important;
+}
+.align-self-center {
+  -ms-flex-item-align: center !important;
+      -ms-grid-row-align: center !important;
+      align-self: center !important;
+}
+.align-self-stretch {
+  -ms-flex-item-align: stretch !important;
+      -ms-grid-row-align: stretch !important;
+      align-self: stretch !important;
+}
+.text-align-left {
+  text-align: left !important;
+}
+.text-align-center {
+  text-align: center !important;
+}
+.text-align-right {
+  text-align: right !important;
+}
+.text-align-justify {
+  text-align: justify !important;
+}
+.float-left {
+  float: left !important;
+}
+.float-right {
+  float: right !important;
+}
+.float-none {
+  float: none !important;
+}
+.vertical-align-bottom {
+  vertical-align: bottom !important;
+}
+.vertical-align-middle {
+  vertical-align: middle !important;
+}
+.vertical-align-top {
+  vertical-align: top !important;
+}
+.no-padding {
+  padding: 0 !important;
+}
+.no-padding-left {
+  padding-left: 0 !important;
+}
+.no-padding-right {
+  padding-right: 0 !important;
+}
+.no-padding-top {
+  padding-top: 0 !important;
+}
+.no-padding-bottom {
+  padding-bottom: 0 !important;
+}
+.no-margin {
+  margin: 0 !important;
+}
+.no-margin-left {
+  margin-left: 0 !important;
+}
+.no-margin-right {
+  margin-right: 0 !important;
+}
+.no-margin-top {
+  margin-top: 0 !important;
+}
+.no-margin-bottom {
+  margin-bottom: 0 !important;
+}
+.width-auto {
+  width: auto !important;
+}
+.width-100 {
+  width: 100% !important;
+}
+.padding {
+  padding: 10px !important;
+}
+.padding-top {
+  padding-top: 10px !important;
+}
+.padding-bottom {
+  padding-bottom: 10px !important;
+}
+.padding-left {
+  padding-left: 10px !important;
+}
+.padding-left-ios-edge {
+  padding-left: constant(safe-area-inset-left);
+  padding-left: env(safe-area-inset-left);
+}
+.padding-right-ios-edge {
+  padding-right: constant(safe-area-inset-right);
+  padding-right: env(safe-area-inset-right);
+}
+.padding-top-ios-edge {
+  padding-top: constant(safe-area-inset-top);
+  padding-top: env(safe-area-inset-top);
+}
+.padding-bottom-ios-edge {
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+.padding-right {
+  padding-right: 10px !important;
+}
+.padding-vertical {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+.padding-horizontal {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+.margin {
+  margin: 10px !important;
+}
+.margin-top {
+  margin-top: 10px !important;
+}
+.margin-bottom {
+  margin-bottom: 10px !important;
+}
+.margin-left {
+  margin-left: 10px !important;
+}
+.margin-right {
+  margin-right: 10px !important;
+}
+.margin-vertical {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+.margin-horizontal {
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+/* === Grid === */
+.row-flex {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-align: start;
+      align-items: flex-start;
+}
+.row-flex > [class*="col-"],
+.row-flex > .col {
+  box-sizing: border-box;
+}
+.row-flex .col {
+  width: 100%;
+}
+.row-flex .col-50 {
+  width: 50%;
+  width: calc(42.5%);
+}
+.row-flex .col-33 {
+  width: 33.333333333333336%;
+  width: calc(23.33333333%);
+}
+.row-flex .no-gap .col-50 {
+  width: 50%;
+}
+.row-flex .no-gap .col-33 {
+  width: 33.333333333333336%;
+}
+.font-1 {
+  font-size: 1rem;
+}
+.font-2 {
+  font-size: 2rem;
+}
+.font-08 {
+  font-size: 0.7rem;
+}
+.flex-item-divider {
+  background: #e1e1e1;
+  width: 1px;
+  height: 3.5rem;
+}
+.bar-nav {
+  background: #4d92fd;
+}
+.bar-nav.grad {
+  /* Safari 5.1 - 6.0 */
+  /* Opera 11.1 - 12.0 */
+  /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #4f8ffd, #2ac0fd);
+}
+.bar-nav.grad a.icon-left {
+  color: #fff;
+}
+.bar-nav h1 {
+  color: #fff;
+}
+.grad-225deg {
+  /* Safari 5.1 - 6.0 */
+  /* Opera 11.1 - 12.0 */
+  /* Firefox 3.6 - 15 */
+  background: linear-gradient(225deg, #4f8ffd, #2ac0fd);
+  position: relative;
+  height: 7rem;
+}
+.grad-225deg ~ .content {
+  top: 7rem;
+}
+.grad-225deg > .bar-nav {
+  background: transparent;
+}
+.grad-225deg > .bar-nav:after {
+  display: none;
+}
+.grad-225deg .list-block {
+  position: absolute;
+  top: 2.2rem;
+  width: 100%;
+  margin: 0;
+}
+.grad-225deg .list-block ul {
+  background: transparent;
+  color: #fff;
+}
+.grad-225deg .list-block ul:before,
+.grad-225deg .list-block ul:after {
+  display: none;
+}
+.grad-225deg .list-block ul .item-media {
+  background: #eee;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+}
+.grad-225deg .list-block ul .item-media img,
+.grad-225deg .list-block ul .item-media .iconfont {
+  color: #777;
+  border-radius: 50%;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.grad-225deg .list-block ul .item-inner .item-after {
+  color: #fff;
+  display: block;
+}
+.grad-225deg .list-block ul .item-inner .item-after .ye {
+  font-size: 1rem;
+}
+.grad-225deg .list-block ul .item-inner .item-after .sub {
+  font-size: 0.5rem;
+}
+.row > [class*="col-"].margin-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  float: none;
+}
+.row > [class*="col-"].btn-center {
+  float: none;
+  margin: 0 auto;
+  max-width: 200px;
+}
+.star-row {
+  float: left;
+  overflow: hidden;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 !important;
+}
+.star-row li {
+  display: inline;
+}
+.star-row li .iconfont {
+  font-size: 14px;
+  color: #645b48;
+}
+.star-row li.on .iconfont {
+  color: #ff9500;
+}
+.star-row.star-row-sm li .iconfont {
+  font-size: 10px;
+}
+#embed-captcha {
+  width: 100%;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+#embed-captcha .geetest_holder.geetest_wind {
+  width: 100% !important;
+}
+.qrcode img {
+  width: 100%;
+}
+.task-list {
+  font-size: 0.7rem;
+  line-height: 1.265rem;
+  margin-top: 0;
+}
+.task-list ul {
+  background: transparent;
+}
+.task-list ul li {
+  background: #fff;
+  margin-top: 0.3rem;
+}
+.task-list ul li .item-title-row .item-title p:first-child {
+  margin-top: 0;
+  margin-bottom: .3rem;
+}
+.task-list ul li .item-title-row .item-title .dj {
+  font-size: 90%;
+  margin-top: .2rem;
+}
+.task-list ul li .item-title-row .item-after {
+  display: block;
+}
+.popup-task {
+  height: 90%;
+  bottom: 0;
+  top: auto;
+}
+.popup-task .close-popup {
+  z-index: 300;
+  position: relative;
+}
+.content-promote .card-data .card-content .card-content-inner {
+  padding: 0 0.75rem;
+}
+.content-promote .card-data .card-content .card-content-inner .row-flex .col-30 {
+  padding: 0.5rem 0;
+}
+.content-promote .card-data .card-content .card-content-inner .row-flex .col-30 .strong {
+  font-size: 1rem;
+}
+.content-promote .card-promote .card-content .row-flex {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+.content-promote .card-promote .card-content .row-flex .plink {
+  white-space: nowrap;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+.content-mingxi .mingxi-list .item-after {
+  display: block;
+  max-height: -webkit-max-content;
+  max-height: -moz-max-content;
+  max-height: max-content;
+  text-align: right;
+}
+.content-gonggao .content-padded p {
+  text-indent: 2em;
+}
+.content-login {
+  background: linear-gradient(#2ac0fd, #4f8ffd);
+}
+.content-login .logo-img {
+  width: 95px;
+  margin: 36px auto 0;
+  padding: 20px;
+  border: 4px solid #f4f4f4;
+  background: transparent;
+  border-radius: 50%;
+}
+.content-login .logo-img img {
+  width: 100%;
+}
+.content-login .list-block-login {
+  color: #fff;
+}
+.content-login .list-block-login ul {
+  background: transparent;
+}
+.content-login .list-block-login ul:before {
+  display: none;
+}
+.content-login .list-block-login ul:after {
+  display: none;
+}
+.content-login .list-block-login ul li .item-media .iconfont {
+  font-size: 1.5rem;
+}
+.content-login .list-block-login ul li .item-inner {
+  min-height: 4rem;
+  padding-bottom: 0;
+  padding-top: 0;
+  /* form starting stylings ------------------------------- */
+}
+.content-login .list-block-login ul li .item-inner:after {
+  display: none;
+}
+.content-login .list-block-login ul li .item-inner .item-input.group {
+  position: relative;
+}
+.content-login .list-block-login ul li .item-inner .item-input.group input {
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #fff;
+}
+.content-login .list-block-login ul li .item-inner .item-input.group input:focus {
+  outline: none;
+  border-bottom-color: transparent;
+}
+.content-login .list-block-login ul li .item-inner .item-input.group input:focus ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #fff;
+}
+.content-login .list-block-login ul li .item-inner .item-input.group input:focus ~ .group-bar:before,
+.content-login .list-block-login ul li .item-inner .item-input.group input:focus ~ .group-bar:after {
+  width: 50%;
+}
+.content-login .list-block-login ul li .item-inner .item-input.group input:focus ~ .highlight {
+  animation: inputHighlighter 0.3s ease;
+}
+.content-login .list-block-login ul li .item-inner .item-input.group input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  text-indent: -2.35em;
+  color: green;
+}
+.content-login .list-block-login ul li .item-inner .item-input.group label {
+  color: #fff;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.content-login .list-block-login ul li .item-inner .item-input.group .group-bar {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.content-login .list-block-login ul li .item-inner .item-input.group .group-bar:before,
+.content-login .list-block-login ul li .item-inner .item-input.group .group-bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #fff;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.content-login .list-block-login ul li .item-inner .item-input.group .group-bar:before {
+  left: 50%;
+}
+.content-login .list-block-login ul li .item-inner .item-input.group .group-bar:after {
+  right: 50%;
+}
+.content-login .list-block-login ul li .item-inner .item-input.group .highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+.content-login .list-block-login .btn-center {
+  max-width: none;
+  margin-top: 30px;
+}
+.content-login .list-block-login .btn-center .button {
+  background: #fff;
+  color: #0894ec ;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  letter-spacing: 1rem;
+  padding-left: 1rem;
+}
+.content-login .list-block-login .btn-center .button.disabled {
+  background: #c8c9cb;
+}
+.content-regist .list-block .item-media .iconfont {
+  border-radius: 50%;
+  height: 29px;
+  width: 29px;
+  font-size: 1rem;
+  line-height: 29px;
+  text-align: center;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+.content-regist .list-block .item-media .iconfont.bg-primary {
+  background: #0894ec;
+}
+.content-regist .list-block .item-media .iconfont.bg-success {
+  background: #4cd964;
+}
+.content-regist .list-block .item-media .iconfont.bg-danger {
+  background: #f6383a;
+}
+.content-regist .list-block .item-media .iconfont.bg-warning {
+  background: #f60;
+}
+.content-regist .list-block .btn-center {
+  max-width: none;
+  margin-top: 30px;
+}
+.content-regist .list-block .btn-center .button {
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  letter-spacing: 1rem;
+  padding-left: 1rem;
+}
+.content-regist .list-block .btn-center .button.disabled {
+  background: #c8c9cb;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>evo</title>
+    <% include partion/_head.html %>
+</head>
+
+<body>
+<div class="page-group">
+    <div class="page page-current " id="page-login">
+
+        <div class="content content-login">
+            <div class="row margin-auto">
+               <div class="col-100 text-align-center">
+                   <div class="logo-img">
+                       <img src="../icons/logo-big.png" alt="">
+                   </div>
+
+               </div>
+            </div>
+
+            <div class="list-block list-block-login">
+
+
+                <ul>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><i class="icon iconfont">&#xe64a;</i></div>
+                            <div class="item-inner">
+                                <div class="group item-input">
+                                    <input type="text" required name="username" style="color: #fff;" class="login-input">
+                                    <span class="highlight"></span>
+                                    <span class="group-bar"></span>
+                                    <label>输入手机号、账号</label>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    <div class="item-content">
+                        <div class="item-media"><i class="icon iconfont">&#xe62a;</i></div>
+                        <div class="item-inner">
+                            <div class="group item-input">
+                                <input type="password" required name="password" style="color: #fff;" class="login-input">
+                                <span class="highlight"></span>
+                                <span class="group-bar"></span>
+                                <label>输入密码</label>
+
+                            </div>
+                        </div>
+                    </div>
+                    </li>
+                </ul>
+                <div class="row">
+                    <div class="col-80 btn-center">
+                        <a id="J_login" disabled="disabled" class="color-primary button button-big button-fill button-round disabled">登录</a>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col">
+                        <p class="text-align-center color-white font-08">没有账号？<a href="regist.html" style="color: #fff;">点击注册</a></p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<% include partion/_script.html %>
+</body>
+
+</html>

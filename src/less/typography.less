@@ -1,0 +1,157 @@
+/* === Typography === */
+.rules-loop(@values, @ruleName) {
+  .loop(@array, @i: 1) when (@i =< length(@array)) {
+    @value: extract(@array, @i);
+    .@{ruleName}-@{value} {
+      @{ruleName}: @value !important;
+    }
+    .loop(@array, (@i + 1));
+  }
+  .loop(@values);
+}
+
+// Display
+@display: flex, block, inline-flex, inline-block, inline, none;
+.rules-loop(@display, display);
+
+// Flex Shrink
+@shrinks: 0,1,2,3,4,5,6,7,8,9,10;
+.rules-loop(@shrinks, flex-shrink);
+
+// Justify Content
+@justify: flex-start, center, flex-end, space-between, space-around, space-evenly, stretch, start, end, left, right;
+.rules-loop(@justify, justify-content);
+
+// Align Content
+@alignContent: flex-start, flex-end, center, space-between, space-around, stretch;
+.rules-loop(@alignContent, align-content);
+
+// Align Items
+@alignItems: flex-start, flex-end, center, stretch;
+.rules-loop(@alignItems, align-items);
+
+// Align Self
+@alignSelf: flex-start, flex-end, center, stretch;
+.rules-loop(@alignSelf, align-self);
+
+// Text Align
+@textAlign: left, center, right, justify;
+.rules-loop(@textAlign, text-align);
+
+// Float
+@float: left, right, none;
+.rules-loop(@float, float);
+
+// Vertical Align
+@verticalAlign: bottom, middle, top;
+.rules-loop(@verticalAlign, vertical-align);
+
+// Padding
+.no-padding {
+  padding: 0 !important;
+}
+.no-padding-left {
+  padding-left: 0 !important;
+}
+.no-padding-right {
+  padding-right: 0 !important;
+}
+.no-padding-top {
+  padding-top: 0 !important;
+}
+.no-padding-bottom {
+  padding-bottom: 0 !important;
+}
+// Margin
+.no-margin {
+  margin: 0 !important;
+}
+.no-margin-left {
+  margin-left: 0 !important;
+}
+.no-margin-right {
+  margin-right: 0 !important;
+}
+.no-margin-top {
+  margin-top: 0 !important;
+}
+.no-margin-bottom {
+  margin-bottom: 0 !important;
+}
+
+
+// Width
+.width-auto {
+  width: auto !important;
+}
+.width-100 {
+  width: 100% !important;
+}
+
+
+@spacing: 10px;
+  // Padding
+  .padding {
+    padding: @spacing !important;
+  }
+  .padding-top {
+    padding-top: @spacing !important;
+  }
+  .padding-bottom {
+    padding-bottom: @spacing !important;
+  }
+  .padding-left {
+    padding-left: @spacing !important;
+  }
+  .padding-left-ios-edge {
+    padding-left: constant(safe-area-inset-left);
+    padding-left: env(safe-area-inset-left);
+  }
+  .padding-right-ios-edge {
+    padding-right: constant(safe-area-inset-right);
+    padding-right: env(safe-area-inset-right);
+  }
+  .padding-top-ios-edge {
+    padding-top: constant(safe-area-inset-top);
+    padding-top: env(safe-area-inset-top);
+  }
+  .padding-bottom-ios-edge {
+    padding-bottom: constant(safe-area-inset-bottom);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  .padding-right {
+    padding-right: @spacing !important;
+  }
+  .padding-vertical {
+    padding-top: @spacing !important;
+    padding-bottom: @spacing !important;
+  }
+  .padding-horizontal {
+    padding-left: @spacing !important;
+    padding-right: @spacing !important;
+  }
+  // Margin
+  .margin {
+    margin: @spacing !important;
+  }
+  .margin-top {
+    margin-top: @spacing !important;
+  }
+  .margin-bottom {
+    margin-bottom: @spacing !important;
+  }
+
+  .margin-left {
+    margin-left: @spacing !important;
+  }
+  .margin-right {
+    margin-right: @spacing !important;
+  }
+  .margin-vertical {
+    margin-top: @spacing !important;
+    margin-bottom: @spacing !important;
+  }
+  .margin-horizontal {
+    margin-left: @spacing !important;
+    margin-right: @spacing !important;
+  }

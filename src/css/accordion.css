@@ -1,0 +1,109 @@
+/* === Accordion === */
+.list-block .accordion-item-toggle {
+  cursor: pointer;
+  transition-duration: 300ms;
+}
+.list-block .accordion-item-toggle .item-inner {
+  padding-right: 1.75rem;
+  background: no-repeat calc(100% - 15px) center;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D'0%200%2060%20120'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%3Cpath%20d%3D'm60%2061.5-38.25%2038.25-9.75-9.75%2029.25-28.5-29.25-28.5%209.75-9.75z'%20fill%3D'%23c7c7cc'%2F%3E%3C%2Fsvg%3E");
+  background-size: 0.5rem 1rem;
+}
+html:not(.watch-active-state) .list-block .accordion-item-toggle:active,
+.list-block .accordion-item-toggle.active-state {
+  transition-duration: 0ms;
+  background-color: #d9d9d9;
+}
+html:not(.watch-active-state) .list-block .accordion-item-toggle:active > .item-inner:after,
+.list-block .accordion-item-toggle.active-state > .item-inner:after {
+  background-color: transparent;
+}
+.list-block .accordion-item-toggle .item-inner,
+.list-block .accordion-item > .item-link .item-inner {
+  transition-duration: 300ms;
+  transition-property: background-color;
+}
+.list-block .accordion-item-toggle .item-inner:after,
+.list-block .accordion-item > .item-link .item-inner:after {
+  transition-duration: 300ms;
+}
+.list-block .accordion-item-expanded .accordion-item-toggle .item-inner,
+.list-block .accordion-item-expanded > .item-link .item-inner {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D'0%200%2060%20120'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%3Cpath%20d%3D'm60%2061.5-38.25%2038.25-9.75-9.75%2029.25-28.5-29.25-28.5%209.75-9.75z'%20transform%3D'translate(115%2C%2030)%20rotate(90)'%20fill%3D'%23c7c7cc'%2F%3E%3C%2Fsvg%3E");
+  background-size: 1rem 1rem;
+}
+.list-block .accordion-item-expanded .accordion-item-toggle .item-inner:after,
+.list-block .accordion-item-expanded > .item-link .item-inner:after {
+  background-color: transparent;
+}
+.list-block .accordion-item .content-block,
+.list-block .accordion-item .list-block {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.list-block .accordion-item ul {
+  padding-left: 0;
+}
+.accordion-item-content {
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  font-size: 0.7rem;
+  transition-duration: 300ms;
+  transform: translate3d(0, 0, 0);
+}
+.accordion-item-expanded > .accordion-item-content {
+  height: auto;
+}
+html.android-4 .accordion-item-content {
+  transform: none;
+}
+.custom-accordion {
+  padding-left: 0;
+  padding-right: 0;
+}
+.custom-accordion .accordion-item-toggle {
+  padding: 0 0.75rem;
+  height: 2.2rem;
+  line-height: 2.2rem;
+  font-size: 0.85rem;
+  color: #3d4145;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+.custom-accordion .accordion-item-toggle:active {
+  background: rgba(0, 0, 0, 0.15);
+}
+.custom-accordion .accordion-item-toggle span {
+  display: inline-block;
+  margin-left: 0.75rem;
+}
+.custom-accordion .accordion-item:last-child .accordion-item-toggle {
+  border-bottom: none;
+}
+.custom-accordion .icon-plus,
+.custom-accordion .icon-minus {
+  display: inline-block;
+  width: 1.1rem;
+  height: 1.1rem;
+  border: 1px solid #3d4145;
+  border-radius: 100%;
+  line-height: 1rem;
+  text-align: center;
+}
+.custom-accordion .icon-plus:before,
+.custom-accordion .icon-minus:before {
+  content: "";
+}
+.custom-accordion .icon-minus {
+  display: none;
+}
+.custom-accordion .accordion-item-expanded .icon-minus {
+  display: inline-block;
+}
+.custom-accordion .accordion-item-expanded .icon-plus {
+  display: none;
+}
+.custom-accordion .accordion-item-content {
+  padding: 0 0.75rem;
+}

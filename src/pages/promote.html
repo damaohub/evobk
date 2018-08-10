@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>evo</title>
+<% include partion/_head.html %>
+</head>
+
+<body>
+  <div class="page-group">
+    <div class="page page-current" id="page-promote">
+      <header class="bar bar-nav grad">
+        <h1 class="title">推广中心</h1>
+      </header>
+      <nav class="bar bar-tab">
+        <a class="tab-item" href="index.html">
+          <span class="icon iconfont">&#xe602;</span>
+          <span class="tab-label">接单中心</span>
+        </a>
+        <a class="tab-item" href="list.html">
+          <span class="icon iconfont">&#xe6c8;</span>
+          <span class="tab-label">订单列表</span>
+        </a>
+        <a class="tab-item active" href="promote.html">
+          <span class="icon iconfont">&#xe603;</span>
+          <span class="tab-label">推广中心</span>
+        </a>
+        <a class="tab-item" href="center.html">
+          <span class="icon iconfont">&#xe61e;</span>
+          <span class="tab-label">个人中心</span>
+        </a>
+        
+      </nav>
+      <div class="content">
+        <div class="content-promote">
+
+          <div class="card card-data">
+            <div class="card-header">
+             
+                <div class="col-50">
+                  <div class="color-gray"><small>下级个数（个）</small></div>
+                  <div class="text-align-center font-1"><strong>2</strong></div>
+                </div>
+                <div class="col-50">
+                  <div class="color-gray"><small>推广收益（元）</small></div>
+                  <div class="text-align-center color-danger font-1">
+                    <span>+</span>
+                    <strong class="">50</strong>
+                  </div>
+               
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="card-content-inner">
+                <div class="row-flex">
+                  <div class="col-30 text-align-center">
+                    <div>
+                     完成量（条）
+                    </div>
+                    <div >
+                      <span class="color-success font-1">50</span>
+                    </div>
+                  </div>
+                   <div class="flex-item-divider"></div>
+                  <div class="col-30 text-align-center">
+                    <div class="">
+                      失败量（条）
+                    </div>
+                    <div>
+                      <span class="color-warning font-1">50</span>
+                    </div>
+                  </div>
+                  <div class="flex-item-divider"></div>
+                  <div class="col-30 text-align-center">
+                    <div >
+                     成功率（%）
+                    </div>
+                    <div>
+                    <span class="font-1">50</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <div class="card-content-inner text-align-center">
+              <div>5616316,你可以提现</div>
+              <div class="color-primary">
+                <i class="iconfont">&#xe608;</i>
+                  <span class="font-2">12000</span>
+              </div>
+              <div><small class="color-gray">说明文字啥什么的加点水</small></div>
+              <div class="row no-gutter margin-top">
+                <div class="col-80 margin-auto">
+                  <a href="tixian.html" class="button button-fill button-big">提现 </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-promote">
+          <div class="card-header">推广</div>
+          <div class="card-content">
+            <div class="card-content-inner">
+              <div class="row-flex">
+                <div>推广码：</div>
+                <div id="pcode">E07AAC1253</div>
+              </div>
+              <div class="row-flex ">
+                <div class="flex-shrink-0">推广链接：</div>
+                <div id="plink" class="plink align-self-stretch">https://www.wj.ink/spread.action?con=E07AAC1253</div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a class="link cpt" data-clipboard-target="#pcode">复制推广码</a>
+            <a class="link cpt" data-clipboard-target="#plink">复制推广链接</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+<script src="../js/clipboard.min.js"></script>
+<% include partion/_script.html %>
+<script>
+      var clipboard = new ClipboardJS('.cpt');
+        clipboard.on('success', function (e) {
+          $.alert(e.text, '复制成功！');
+          e.clearSelection();
+        });
+
+        clipboard.on('error', function (e) {
+         $.alert('请手动复制', '复制失败！');
+        });
+</script>
+</body>
+
+</html>
